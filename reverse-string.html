@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reverse string</title>
+</head>
+<body>
+<script>
+	function reverse (s) {
+		return s.split('')
+				.reduce(function(prv, cur, i, arr){return prv + arr[arr.length - i - 1];},'');
+	}
+
+	var a = "hello con vo yeu dau, thay ko hum ba xa tui!";
+
+	var _a = reverse(a);
+
+	console.log(_a);
+</script>
+</body>
+</html>
