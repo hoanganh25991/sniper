@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accordion</title>
+	<style>
+
+		#accordion li {
+			list-style: none;
+		}
+
+		#accordion .content {
+			display: none;
+		}
+
+		#accordion input[type='radio'] {
+			display: none;
+		}
+
+		#accordion  li label {
+			padding:10px;
+			display:block;
+			font-size:30px;
+			line-height:30px;
+			color:#FFFFFF;
+			background-color:#3498db;
+			border-bottom: solid 8px #2980b9;
+		} 
+
+		#accordion input[type='radio']:checked + .content {
+			display: block;
+		}	
+
+	</style>
+</head>
+<body>
+<ul id="accordion">
+	<li>
+		<label for="first">Fist Title</label>
+		<input type="radio" name="accordion" id="first" checked>
+		<div class="content">
+			<p>To define a CSS adjacent selector, the plus sign is used. h1+p {color:blue;} The above CSS code will format the first paragraph</p>
+		</div>
+	</li>
+	<li>
+		<label for="second">Second Title</label>
+		<input type="radio" name="accordion" id="second">
+		<div class="content">
+			<p>It explains How to use different signs (+,> and ~) in CSS selector and ... selector does NOT have to immediately follow the first one means</p>
+		</div>
+	</li>
+	<li>
+		<label for="third">Third Title</label>
+		<input type="radio" name="accordion" id="third">
+		<div class="content">
+			<p> Class selectors; 6.5 ID selectors; 6.6 Pseudo-classes ... Pattern, Meaning, Described in section, First defined in CSS level</p>
+		</div>
+	</li>       
+</ul>
+</body>
+</html>
+
